@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="MW_CPP_UWP_SampleApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MW_CPP_UWP_SampleApp"
+    xmlns:local_2="using:Windows.Devices.Bluetooth"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="800*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" FontSize="48" TextWrapping="Wrap" Text="Select MetaWear" 
+                   VerticalAlignment="Top" Foreground="#758cc0"/>
+        <ListView Grid.Row="1" x:Name="pairedDevicesListView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectionChanged="SelectedBtleDevice">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local_2:BluetoothLEDevice">
+                    <StackPanel>
+                        <TextBlock x:Name="nameblock" Text="{x:Bind Name}" HorizontalAlignment="Left" TextWrapping="Wrap" 
+                                   VerticalAlignment="Top" Height="57" Width="Auto" FontSize="36" Margin="10,10,0,0" />
+                        <TextBlock x:Name="connectedblock" HorizontalAlignment="Left" TextWrapping="Wrap" 
+                                   VerticalAlignment="Top" Height="57" Width="Auto" FontSize="20" Margin="10,10,0,0" >
+                            <Run Text="{x:Bind ConnectionStatus}" />
+                            <Run Text="  " />
+                            <Run Text="{x:Bind DeviceId}" FontSize="14" />
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Grid.Row="2" Content="Refresh" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="10,0" Click="refreshDevices"/>
+    </Grid>
+</Page>

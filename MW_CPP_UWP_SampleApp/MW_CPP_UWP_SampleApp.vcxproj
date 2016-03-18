@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7837bf6e-4301-439c-aec4-a9c2b8d2e7a2}</ProjectGuid>
+    <RootNamespace>MW_CPP_UWP_SampleApp</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ApplicationType>Windows Store</ApplicationType>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>MW_CPP_UWP_SampleApp_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4453;28204</DisableSpecificWarnings>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="DeviceInfo.xaml.h">
+      <DependentUpon>DeviceInfo.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="metawear\core\callback.h" />
+    <ClInclude Include="metawear\core\connection.h" />
+    <ClInclude Include="metawear\core\cpp\constant.h" />
+    <ClInclude Include="metawear\core\cpp\datainterpreter.h" />
+    <ClInclude Include="metawear\core\cpp\datasignal_private.h" />
+    <ClInclude Include="metawear\core\cpp\event_private.h" />
+    <ClInclude Include="metawear\core\cpp\event_register.h" />
+    <ClInclude Include="metawear\core\cpp\metawearboard_def.h" />
+    <ClInclude Include="metawear\core\cpp\moduleinfo.h" />
+    <ClInclude Include="metawear\core\cpp\register.h" />
+    <ClInclude Include="metawear\core\cpp\responseheader.h" />
+    <ClInclude Include="metawear\core\cpp\settings_register.h" />
+    <ClInclude Include="metawear\core\cpp\timer_private.h" />
+    <ClInclude Include="metawear\core\cpp\timer_register.h" />
+    <ClInclude Include="metawear\core\cpp\version.h" />
+    <ClInclude Include="metawear\core\data.h" />
+    <ClInclude Include="metawear\core\dataprocessor_fwd.h" />
+    <ClInclude Include="metawear\core\datasignal.h" />
+    <ClInclude Include="metawear\core\datasignal_fwd.h" />
+    <ClInclude Include="metawear\core\debug.h" />
+    <ClInclude Include="metawear\core\dllmarker.h" />
+    <ClInclude Include="metawear\core\event.h" />
+    <ClInclude Include="metawear\core\event_fwd.h" />
+    <ClInclude Include="metawear\core\metawearboard.h" />
+    <ClInclude Include="metawear\core\metawearboard_fwd.h" />
+    <ClInclude Include="metawear\core\module.h" />
+    <ClInclude Include="metawear\core\settings.h" />
+    <ClInclude Include="metawear\core\status.h" />
+    <ClInclude Include="metawear\core\timer.h" />
+    <ClInclude Include="metawear\core\timer_fwd.h" />
+    <ClInclude Include="metawear\core\types.h" />
+    <ClInclude Include="metawear\peripheral\haptic.h" />
+    <ClInclude Include="metawear\peripheral\ibeacon.h" />
+    <ClInclude Include="metawear\peripheral\led.h" />
+    <ClInclude Include="metawear\peripheral\neopixel.h" />
+    <ClInclude Include="metawear\processor\accumulator.h" />
+    <ClInclude Include="metawear\processor\average.h" />
+    <ClInclude Include="metawear\processor\buffer.h" />
+    <ClInclude Include="metawear\processor\comparator.h" />
+    <ClInclude Include="metawear\processor\counter.h" />
+    <ClInclude Include="metawear\processor\cpp\dataprocessor_private.h" />
+    <ClInclude Include="metawear\processor\cpp\dataprocessor_register.h" />
+    <ClInclude Include="metawear\processor\cpp\processor_private_common.h" />
+    <ClInclude Include="metawear\processor\dataprocessor.h" />
+    <ClInclude Include="metawear\processor\delta.h" />
+    <ClInclude Include="metawear\processor\math.h" />
+    <ClInclude Include="metawear\processor\passthrough.h" />
+    <ClInclude Include="metawear\processor\processor_common.h" />
+    <ClInclude Include="metawear\processor\pulse.h" />
+    <ClInclude Include="metawear\processor\rms.h" />
+    <ClInclude Include="metawear\processor\rss.h" />
+    <ClInclude Include="metawear\processor\sample.h" />
+    <ClInclude Include="metawear\processor\threshold.h" />
+    <ClInclude Include="metawear\processor\time.h" />
+    <ClInclude Include="metawear\sensor\accelerometer.h" />
+    <ClInclude Include="metawear\sensor\accelerometer_bmi160.h" />
+    <ClInclude Include="metawear\sensor\accelerometer_mma8452q.h" />
+    <ClInclude Include="metawear\sensor\ambientlight_ltr329.h" />
+    <ClInclude Include="metawear\sensor\barometer_bmp280.h" />
+    <ClInclude Include="metawear\sensor\cpp\accelerometer_bmi160_private.h" />
+    <ClInclude Include="metawear\sensor\cpp\accelerometer_bmi160_register.h" />
+    <ClInclude Include="metawear\sensor\cpp\accelerometer_mma8452q_private.h" />
+    <ClInclude Include="metawear\sensor\cpp\accelerometer_mma8452q_register.h" />
+    <ClInclude Include="metawear\sensor\cpp\ambientlight_ltr329_register.h" />
+    <ClInclude Include="metawear\sensor\cpp\barometer_bmp280_register.h" />
+    <ClInclude Include="metawear\sensor\cpp\gpio_register.h" />
+    <ClInclude Include="metawear\sensor\cpp\gyro_bmi160_private.h" />
+    <ClInclude Include="metawear\sensor\cpp\gyro_bmi160_register.h" />
+    <ClInclude Include="metawear\sensor\cpp\multichanneltemperature_register.h" />
+    <ClInclude Include="metawear\sensor\cpp\switch_register.h" />
+    <ClInclude Include="metawear\sensor\gpio.h" />
+    <ClInclude Include="metawear\sensor\gyro_bmi160.h" />
+    <ClInclude Include="metawear\sensor\multichanneltemperature.h" />
+    <ClInclude Include="metawear\sensor\switch.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClInclude>
+    <ClInclude Include="MainPage.xaml.h">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="DeviceInfo.xaml" />
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="MW_CPP_UWP_SampleApp_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png" />
+    <Image Include="Assets\SplashScreen.scale-200.png" />
+    <Image Include="Assets\Square150x150Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.scale-200.png" />
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp">
+      <DependentUpon>App.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="DeviceInfo.xaml.cpp">
+      <DependentUpon>DeviceInfo.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="MainPage.xaml.cpp">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </ClCompile>
+    <ClCompile Include="metawear\core\cpp\datasignal.cpp" />
+    <ClCompile Include="metawear\core\cpp\debug.cpp" />
+    <ClCompile Include="metawear\core\cpp\event.cpp" />
+    <ClCompile Include="metawear\core\cpp\moduleinfo.cpp" />
+    <ClCompile Include="metawear\core\cpp\responseheader.cpp" />
+    <ClCompile Include="metawear\core\cpp\settings.cpp" />
+    <ClCompile Include="metawear\core\cpp\timer.cpp" />
+    <ClCompile Include="metawear\core\cpp\version.cpp" />
+    <ClCompile Include="metawear\impl\cpp\datainterpreter.cpp" />
+    <ClCompile Include="metawear\impl\cpp\metawearboard.cpp" />
+    <ClCompile Include="metawear\peripheral\cpp\haptic.cpp" />
+    <ClCompile Include="metawear\peripheral\cpp\ibeacon.cpp" />
+    <ClCompile Include="metawear\peripheral\cpp\led.cpp" />
+    <ClCompile Include="metawear\peripheral\cpp\neopixel.cpp" />
+    <ClCompile Include="metawear\processor\cpp\accumulator.cpp" />
+    <ClCompile Include="metawear\processor\cpp\average.cpp" />
+    <ClCompile Include="metawear\processor\cpp\buffer.cpp" />
+    <ClCompile Include="metawear\processor\cpp\combiner.cpp" />
+    <ClCompile Include="metawear\processor\cpp\comparator.cpp" />
+    <ClCompile Include="metawear\processor\cpp\dataprocessor.cpp" />
+    <ClCompile Include="metawear\processor\cpp\delta.cpp" />
+    <ClCompile Include="metawear\processor\cpp\math.cpp" />
+    <ClCompile Include="metawear\processor\cpp\passthrough.cpp" />
+    <ClCompile Include="metawear\processor\cpp\pulse.cpp" />
+    <ClCompile Include="metawear\processor\cpp\sample.cpp" />
+    <ClCompile Include="metawear\processor\cpp\threshold.cpp" />
+    <ClCompile Include="metawear\processor\cpp\time.cpp" />
+    <ClCompile Include="metawear\sensor\cpp\accelerometer.cpp" />
+    <ClCompile Include="metawear\sensor\cpp\accelerometer_bmi160.cpp" />
+    <ClCompile Include="metawear\sensor\cpp\accelerometer_mma8452q.cpp" />
+    <ClCompile Include="metawear\sensor\cpp\ambientlight_ltr329.cpp" />
+    <ClCompile Include="metawear\sensor\cpp\barometer_bmp280.cpp" />
+    <ClCompile Include="metawear\sensor\cpp\gpio.cpp" />
+    <ClCompile Include="metawear\sensor\cpp\gyro_bmi160.cpp" />
+    <ClCompile Include="metawear\sensor\cpp\multichanneltemperature.cpp" />
+    <ClCompile Include="metawear\sensor\cpp\switch.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

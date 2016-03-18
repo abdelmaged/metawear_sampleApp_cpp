@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>7837bf6e-4301-439c-aec4-a9c2b8d2e7a2</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>1e507aba-29a2-4d3b-85f6-6ad37b3d5c96</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="metawear">
+      <UniqueIdentifier>{3c5b6e70-0a2a-4ad1-ac2f-8d9028106372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metawear\core">
+      <UniqueIdentifier>{de5271c4-c5a4-4f04-a2dd-948f07cae39e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metawear\impl">
+      <UniqueIdentifier>{8944f3c7-8b6b-4494-a8e8-4c415909d3a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metawear\peripheral">
+      <UniqueIdentifier>{2e32a52f-6894-4ed0-93d0-c3e93b82dde0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metawear\processor">
+      <UniqueIdentifier>{0db31b08-209c-4e49-b2a2-d20d43afa8ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="metawear\sensor">
+      <UniqueIdentifier>{940bcc07-ba8f-445a-b10a-a1c9e0df0c22}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="metawear\core\cpp\datasignal.cpp">
+      <Filter>metawear\core</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\core\cpp\debug.cpp">
+      <Filter>metawear\core</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\core\cpp\event.cpp">
+      <Filter>metawear\core</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\core\cpp\moduleinfo.cpp">
+      <Filter>metawear\core</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\core\cpp\responseheader.cpp">
+      <Filter>metawear\core</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\core\cpp\settings.cpp">
+      <Filter>metawear\core</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\core\cpp\timer.cpp">
+      <Filter>metawear\core</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\core\cpp\version.cpp">
+      <Filter>metawear\core</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\impl\cpp\datainterpreter.cpp">
+      <Filter>metawear\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\impl\cpp\metawearboard.cpp">
+      <Filter>metawear\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\sensor\cpp\accelerometer.cpp">
+      <Filter>metawear\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\sensor\cpp\accelerometer_bmi160.cpp">
+      <Filter>metawear\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\sensor\cpp\accelerometer_mma8452q.cpp">
+      <Filter>metawear\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\sensor\cpp\ambientlight_ltr329.cpp">
+      <Filter>metawear\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\sensor\cpp\barometer_bmp280.cpp">
+      <Filter>metawear\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\sensor\cpp\gpio.cpp">
+      <Filter>metawear\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\sensor\cpp\gyro_bmi160.cpp">
+      <Filter>metawear\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\sensor\cpp\multichanneltemperature.cpp">
+      <Filter>metawear\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\sensor\cpp\switch.cpp">
+      <Filter>metawear\sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\accumulator.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\average.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\buffer.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\combiner.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\comparator.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\dataprocessor.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\delta.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\math.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\passthrough.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\pulse.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\sample.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\threshold.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\processor\cpp\time.cpp">
+      <Filter>metawear\processor</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\peripheral\cpp\haptic.cpp">
+      <Filter>metawear\peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\peripheral\cpp\ibeacon.cpp">
+      <Filter>metawear\peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\peripheral\cpp\led.cpp">
+      <Filter>metawear\peripheral</Filter>
+    </ClCompile>
+    <ClCompile Include="metawear\peripheral\cpp\neopixel.cpp">
+      <Filter>metawear\peripheral</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="metawear\core\callback.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\connection.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\constant.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\datainterpreter.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\datasignal_private.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\event_private.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\event_register.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\metawearboard_def.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\moduleinfo.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\register.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\responseheader.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\settings_register.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\timer_private.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\timer_register.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\cpp\version.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\data.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\dataprocessor_fwd.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\datasignal.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\datasignal_fwd.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\debug.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\dllmarker.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\event.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\event_fwd.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\metawearboard.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\metawearboard_fwd.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\module.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\settings.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\status.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\timer.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\timer_fwd.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\core\types.h">
+      <Filter>metawear\core</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\accelerometer.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\accelerometer_bmi160.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\accelerometer_mma8452q.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\ambientlight_ltr329.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\barometer_bmp280.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\accelerometer_bmi160_private.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\accelerometer_bmi160_register.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\accelerometer_mma8452q_private.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\accelerometer_mma8452q_register.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\ambientlight_ltr329_register.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\barometer_bmp280_register.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\gpio_register.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\gyro_bmi160_private.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\gyro_bmi160_register.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\multichanneltemperature_register.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\cpp\switch_register.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\gpio.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\gyro_bmi160.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\multichanneltemperature.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\sensor\switch.h">
+      <Filter>metawear\sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\accumulator.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\average.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\buffer.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\comparator.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\counter.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\cpp\dataprocessor_private.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\cpp\dataprocessor_register.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\cpp\processor_private_common.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\dataprocessor.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\delta.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\math.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\passthrough.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\processor_common.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\pulse.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\rms.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\rss.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\sample.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\threshold.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\processor\time.h">
+      <Filter>metawear\processor</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\peripheral\haptic.h">
+      <Filter>metawear\peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\peripheral\ibeacon.h">
+      <Filter>metawear\peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\peripheral\led.h">
+      <Filter>metawear\peripheral</Filter>
+    </ClInclude>
+    <ClInclude Include="metawear\peripheral\neopixel.h">
+      <Filter>metawear\peripheral</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MW_CPP_UWP_SampleApp_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+    <Page Include="DeviceInfo.xaml" />
+  </ItemGroup>
+</Project>
